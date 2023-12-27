@@ -2,4 +2,14 @@
   background-color: #f4f5f8;
   height: 98vh;
   width: 90vw;
+  display: flex;
+  border-radius: 20px;
+}
+.sidebar-container {
+  border: 5px solid red;
+  flex-grow: 0.3;
+}
+.workarea-container {
+  border: 5px solid blue;
+  flex-grow: 0.7;
 }
