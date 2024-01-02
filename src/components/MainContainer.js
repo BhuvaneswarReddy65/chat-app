@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./myStyles.css";
 import Sidebar from "./Sidebar";
-import ChatArea from "./ChatArea";
-import Welcome from "./Welcome";
+// import ChatArea from "./ChatArea";
+// import Welcome from "./Welcome";
+import CreateGroups from "./CreateGroups";
 
 const MainContainer = () => {
   const [conversations, setConverasations] = useState([
@@ -25,7 +26,7 @@ const MainContainer = () => {
   return (
     <div className="main-container">
       <Sidebar />
-      <Welcome />
+      <CreateGroups />
     </div>
   );
 };
