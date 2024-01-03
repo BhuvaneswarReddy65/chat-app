@@ -1,13 +1,19 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const MessageSelf = () => {
+  const lightTheme = useSelector((state) => state.themekey);
   var props2 = { name: "you", message: "hi" };
   return (
     <>
-      <div className="message-self-container">
+      <div
+        className={
+          lightTheme ? "message-self-container" : "message-self-container dark"
+        }
+      >
         <div className="message-box">
-          <p>{props2.message}</p>
-          <p className="selftimestamp">12.00am</p>
+          <p className={lightTheme ? "" : "par"}>{props2.message}</p>
+          <p className={lightTheme ? "" : "selftimestamp par"}>12.00am</p>
         </div>
       </div>
     </>
